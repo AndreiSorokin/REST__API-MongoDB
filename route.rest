@@ -1,0 +1,26 @@
+GET http://localhost:3000/users
+
+###
+
+GET http://localhost:3000/users/642355a1c96fe550db030eda
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+   "name": "Aila",
+   "subscribedTo": "Website"
+}
+
+###
+DELETE http://localhost:3000/users/642355a1c96fe550db030eda
+
+###
+PATCH http://localhost:3000/users/642355a1c96fe550db030eda
+Content-Type: application/json
+
+{
+   "name": "New Aila",
+   "subscribedTo": "New Website"
+}
